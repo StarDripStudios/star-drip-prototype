@@ -7,6 +7,13 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="[GAMEASSETS]" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Button.cs" t="Include" />
+            <e p="SimpleCameraController.cs" t="Include" />
+            <e p="Test.cs" t="Include" />
+          </e>
+        </e>
         <e p="Oculus" t="Include">
           <e p="AudioManager" t="Include">
             <e p="Scenes" t="Include">
@@ -746,19 +753,6 @@
               <e p="SimpleJSON.cs" t="Include" />
               <e p="SimpleJSONUnity.cs" t="Include" />
             </e>
-          </e>
-        </e>
-        <e p="Scripts" t="Include">
-          <e p="Button.cs" t="Include" />
-          <e p="SimpleCameraController.cs" t="Include" />
-          <e p="Test.cs" t="Include" />
-        </e>
-        <e p="TutorialInfo" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="Editor" t="Include">
-              <e p="ReadmeEditor.cs" t="Include" />
-            </e>
-            <e p="Readme.cs" t="Include" />
           </e>
         </e>
       </e>
