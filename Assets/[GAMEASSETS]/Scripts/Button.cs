@@ -8,12 +8,12 @@ namespace Ixion.Prototype
     {
         public UnityEvent onButtonPressed;
 
-        public float _min;
-        public float _max;
-        public bool _wasPressed;
+        private float _min;
+        private float _max;
+        private bool _wasPressed;
 
-        public float _previousHandHeight;
-        public XRBaseInteractor _hoverInteractor;
+        private float _previousHandHeight;
+        private XRBaseInteractor _hoverInteractor;
 
         #region MonoBehaviour
 
