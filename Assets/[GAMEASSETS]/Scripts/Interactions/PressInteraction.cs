@@ -8,6 +8,8 @@ namespace Ixion.Prototype
     {
         public Transform target;
         public Collider collision;
+        [Range(0.1f, 1)]
+        public float validPressRange = 0.5f;
         public UnityEvent onButtonPressed;
 
         private float _previousHandHeight;
@@ -17,7 +19,7 @@ namespace Ixion.Prototype
         private void Start()
         { 
             _max = target.localPosition.y;
-            _min = _max - collision.bounds.size.y * 0.5f;
+            _min = _max - collision.bounds.size.y * validPressRange;
         }
 
         public override void OnInteractionEnter(XRBaseInteractor interactor)
@@ -69,6 +71,7 @@ namespace Ixion.Prototype
                 !_wasPressed)
             {
                 onButtonPressed?.Invoke();
+                Debug.Log("<color=blue>Press interaction complete</color>");
             }
 
             _wasPressed = isPressed;
