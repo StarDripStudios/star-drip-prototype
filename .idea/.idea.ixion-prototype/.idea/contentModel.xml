@@ -10,6 +10,12 @@
         <e p="[GAMEASSETS]" t="Include">
           <e p="Scripts" t="Include">
             <e p="Button.cs" t="Include" />
+            <e p="Interactions" t="Include">
+              <e p="CompressInteraction.cs" t="Include" />
+              <e p="HoldInteraction.cs" t="Include" />
+              <e p="Interaction.cs" t="Include" />
+              <e p="PressInteraction.cs" t="Include" />
+            </e>
             <e p="SimpleCameraController.cs" t="Include" />
             <e p="Test.cs" t="Include" />
           </e>
