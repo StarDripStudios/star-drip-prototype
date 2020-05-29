@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6523163334077254817}
   - component: {fileID: 1837304054699598265}
+  - component: {fileID: 7058872194681349948}
   m_Layer: 0
   m_Name: PFB_Interaction_Compress
   m_TagString: Untagged
@@ -124,6 +125,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e13671627b6b94743a8fd8aa0ba35f22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7058872194681349948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978289509369517939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0364b4b9bd4ec443a9de934944e32ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 6265352520427935888}
+  validColor: {r: 0, g: 0.6509434, b: 0.035845075, a: 1}
 --- !u!1 &6265352520427935893
 GameObject:
   m_ObjectHideFlags: 0

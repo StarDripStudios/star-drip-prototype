@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6523163334077254817}
   - component: {fileID: 3596980826040128745}
+  - component: {fileID: -4604364103820122206}
   m_Layer: 0
   m_Name: PFB_Interaction_Hold
   m_TagString: Untagged
@@ -130,7 +131,32 @@ MonoBehaviour:
   holdDuration: 3
   onButtonHeld:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -4604364103820122206}
+        m_MethodName: ValidateColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-4604364103820122206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978289509369517939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0364b4b9bd4ec443a9de934944e32ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 6265352520427935888}
+  validColor: {r: 0, g: 0.6509434, b: 0.035845075, a: 1}
 --- !u!1 &6265352520427935893
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +308,17 @@ MonoBehaviour:
       - m_Target: {fileID: 3596980826040128745}
         m_MethodName: OnInteractionExit
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -4604364103820122206}
+        m_MethodName: ResetColor
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
