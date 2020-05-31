@@ -763,6 +763,13 @@
           </e>
           <e p="README.txt" t="Include" />
         </e>
+        <e p="Framework" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="TemplateSystem" t="Include">
+              <e p="TemplateSystem.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Oculus" t="Include">
           <e p="AudioManager" t="Include">
             <e p="Scenes" t="Include">
