@@ -9,7 +9,7 @@ namespace StarDust
 {
 	[TrackColor(0,0,0)]
 	[TrackClipType(typeof(IndicationClip))]
-	[TrackBindingType(typeof(Indication))]
+	[TrackBindingType(typeof(Level))]
 	public class IndicationTrack : PlayableTrackBase<IndicationBehaviour, IndicationMixerBehaviour, IndicationClip>
 	{
 		

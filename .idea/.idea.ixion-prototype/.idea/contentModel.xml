@@ -11,19 +11,26 @@
           <e p="Scripts" t="Include">
             <e p="Button.cs" t="Include" />
             <e p="ColorValidation.cs" t="Include" />
-            <e p="Indication.cs" t="Include" />
+            <e p="InteractionContainer.cs" t="Include" />
             <e p="Interactions" t="Include">
               <e p="CompressInteraction.cs" t="Include" />
               <e p="HoldInteraction.cs" t="Include" />
               <e p="Interaction.cs" t="Include" />
               <e p="PressInteraction.cs" t="Include" />
             </e>
+            <e p="Level.cs" t="Include" />
             <e p="Playables" t="Include">
               <e p="Indication" t="Include">
-                <e p="IndicationBehaviour.cs" t="Include" />
                 <e p="IndicationClip.cs" t="Include" />
                 <e p="IndicationMixerBehaviour.cs" t="Include" />
                 <e p="IndicationTrack.cs" t="Include" />
+                <e p="InteractionBehaviour.cs" t="Include" />
+              </e>
+              <e p="Interaction" t="Include">
+                <e p="InteractionBehaviour.cs" t="Include" />
+                <e p="InteractionClip.cs" t="Include" />
+                <e p="InteractionMixerBehaviour.cs" t="Include" />
+                <e p="InteractionTrack.cs" t="Include" />
               </e>
             </e>
             <e p="SimpleCameraController.cs" t="Include" />

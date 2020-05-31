@@ -22,6 +22,7 @@ namespace Framework.Playables
 
             clone.AttachObject = AttachObject;
             clone.OwnedClip = OwnedClip;
+            
 
             return playable;
         }

@@ -1,9 +1,8 @@
-﻿using Unity.Mathematics;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
-namespace Ixion.Prototype
+namespace StarDust
 {
     public class CompressInteraction : Interaction
     {

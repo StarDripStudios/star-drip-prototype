@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     interactionType: 2
+  interaction:
+    exposedName: 9117e176d48d4a14bae43d21b9b85066
+    defaultValue: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,6 +51,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     interactionType: 0
+  interaction:
+    exposedName: 7656219435cc9524ab720b13bffe7d6c
+    defaultValue: {fileID: 0}
 --- !u!114 &4557008394813469526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -431,6 +437,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     interactionType: 0
+  interaction:
+    exposedName: be67a11f9c767864d9cc7dcc161c3652
+    defaultValue: {fileID: 0}
 --- !u!114 &6774258107076193437
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -445,6 +454,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     interactionType: 1
+  interaction:
+    exposedName: e1bc19671fa49a1449f4b2fb95586b50
+    defaultValue: {fileID: 0}
 --- !u!114 &8763471519661000325
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -482,3 +494,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     interactionType: 0
+  interaction:
+    exposedName: 4fb65c9ef0ede7c40a1403f659684893
+    defaultValue: {fileID: 0}

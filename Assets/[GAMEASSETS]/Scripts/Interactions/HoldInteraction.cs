@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
-namespace Ixion.Prototype
+namespace StarDust
 {
     public class HoldInteraction : Interaction
     {

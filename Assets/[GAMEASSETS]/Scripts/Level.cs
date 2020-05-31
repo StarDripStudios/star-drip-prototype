@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace StarDust
 {
-	public class Indication : MonoBehaviour
+	public class Level : MonoBehaviour
 	{
 		public Image indicationImage;
 		public Color defaultColor;

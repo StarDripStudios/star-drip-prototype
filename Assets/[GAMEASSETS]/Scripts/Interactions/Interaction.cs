@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-namespace Ixion.Prototype
+namespace StarDust
 {
     public class Interaction : MonoBehaviour
     {
@@ -15,6 +15,11 @@ namespace Ixion.Prototype
         public virtual void OnInteractionExit(XRBaseInteractor interactor)
         {
             HoverInteractor = null;
+        }
+
+        public virtual void Indicate()
+        {
+            
         }
     }
 
