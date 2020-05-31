@@ -211,12 +211,15 @@ namespace Framework
 
 		private string FormatReturn(object data)
 		{
-			return data switch
+			switch (data)
 			{
-				bool b => b.ToString().ToLower(),
-				float fl => (fl.ToString(CultureInfo.InvariantCulture) + "f"),
-				_ => data.ToString()
-			};
+				case bool b :
+					return b.ToString().ToLower();
+				case float fl:
+					return fl.ToString(CultureInfo.InvariantCulture) + "f";
+			}
+			
+			return data.ToString();
 		}
 	}
 }

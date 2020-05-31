@@ -17,4 +17,11 @@ namespace Ixion.Prototype
             HoverInteractor = null;
         }
     }
+
+    public enum InteractionType
+    {
+        Press,
+        Hold,
+        Compress
+    }
 }

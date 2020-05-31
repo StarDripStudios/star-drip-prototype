@@ -11,11 +11,20 @@
           <e p="Scripts" t="Include">
             <e p="Button.cs" t="Include" />
             <e p="ColorValidation.cs" t="Include" />
+            <e p="Indication.cs" t="Include" />
             <e p="Interactions" t="Include">
               <e p="CompressInteraction.cs" t="Include" />
               <e p="HoldInteraction.cs" t="Include" />
               <e p="Interaction.cs" t="Include" />
               <e p="PressInteraction.cs" t="Include" />
+            </e>
+            <e p="Playables" t="Include">
+              <e p="Indication" t="Include">
+                <e p="IndicationBehaviour.cs" t="Include" />
+                <e p="IndicationClip.cs" t="Include" />
+                <e p="IndicationMixerBehaviour.cs" t="Include" />
+                <e p="IndicationTrack.cs" t="Include" />
+              </e>
             </e>
             <e p="SimpleCameraController.cs" t="Include" />
             <e p="Test.cs" t="Include" />
@@ -763,8 +772,78 @@
           </e>
           <e p="README.txt" t="Include" />
         </e>
+        <e p="DefaultPlayables" t="Include">
+          <e p="Editor" t="Include">
+            <e p="TimelinePlayableWizard.cs" t="Include" />
+          </e>
+          <e p="LightControl" t="Include">
+            <e p="Editor" t="Include">
+              <e p="LightControlDrawer.cs" t="Include" />
+            </e>
+            <e p="LightControlBehaviour.cs" t="Include" />
+            <e p="LightControlClip.cs" t="Include" />
+            <e p="LightControlMixerBehaviour.cs" t="Include" />
+            <e p="LightControlTrack.cs" t="Include" />
+          </e>
+          <e p="NavMeshAgentControl" t="Include">
+            <e p="NavMeshAgentControlBehaviour.cs" t="Include" />
+            <e p="NavMeshAgentControlClip.cs" t="Include" />
+            <e p="NavMeshAgentControlMixerBehaviour.cs" t="Include" />
+            <e p="NavMeshAgentControlTrack.cs" t="Include" />
+          </e>
+          <e p="ScreenFader" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ScreenFaderDrawer.cs" t="Include" />
+            </e>
+            <e p="ScreenFaderBehaviour.cs" t="Include" />
+            <e p="ScreenFaderClip.cs" t="Include" />
+            <e p="ScreenFaderMixerBehaviour.cs" t="Include" />
+            <e p="ScreenFaderTrack.cs" t="Include" />
+          </e>
+          <e p="TextSwitcher" t="Include">
+            <e p="Editor" t="Include">
+              <e p="TextSwitcherDrawer.cs" t="Include" />
+            </e>
+            <e p="TextSwitcherBehaviour.cs" t="Include" />
+            <e p="TextSwitcherClip.cs" t="Include" />
+            <e p="TextSwitcherMixerBehaviour.cs" t="Include" />
+            <e p="TextSwitcherTrack.cs" t="Include" />
+          </e>
+          <e p="TimeDilation" t="Include">
+            <e p="Editor" t="Include">
+              <e p="TimeDilationDrawer.cs" t="Include" />
+            </e>
+            <e p="TimeDilationBehaviour.cs" t="Include" />
+            <e p="TimeDilationClip.cs" t="Include" />
+            <e p="TimeDilationMixerBehaviour.cs" t="Include" />
+            <e p="TimeDilationTrack.cs" t="Include" />
+          </e>
+          <e p="TransformTween" t="Include">
+            <e p="Editor" t="Include">
+              <e p="TransformTweenDrawer.cs" t="Include" />
+            </e>
+            <e p="TransformTweenBehaviour.cs" t="Include" />
+            <e p="TransformTweenClip.cs" t="Include" />
+            <e p="TransformTweenMixerBehaviour.cs" t="Include" />
+            <e p="TransformTweenTrack.cs" t="Include" />
+          </e>
+          <e p="Video" t="Include">
+            <e p="VideoPlayableBehaviour.cs" t="Include" />
+            <e p="VideoSchedulerPlayableBehaviour.cs" t="Include" />
+            <e p="VideoScriptPlayableAsset.cs" t="Include" />
+            <e p="VideoScriptPlayableTrack.cs" t="Include" />
+          </e>
+        </e>
         <e p="Framework" t="Include">
           <e p="Scripts" t="Include">
+            <e p="Playables" t="Include">
+              <e p="Base" t="Include">
+                <e p="PlayableBehaviourBase.cs" t="Include" />
+                <e p="PlayableClipBase.cs" t="Include" />
+                <e p="PlayableMixerBehaviourBase.cs" t="Include" />
+                <e p="PlayableTrackBase.cs" t="Include" />
+              </e>
+            </e>
             <e p="TemplateSystem" t="Include">
               <e p="TemplateSystem.cs" t="Include" />
             </e>
