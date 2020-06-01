@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-namespace Ixion.Prototype
+namespace StarDust
 {
     public class Interaction : MonoBehaviour
     {
@@ -16,5 +16,17 @@ namespace Ixion.Prototype
         {
             HoverInteractor = null;
         }
+
+        public virtual void Indicate()
+        {
+            
+        }
+    }
+
+    public enum InteractionType
+    {
+        Press,
+        Hold,
+        Compress
     }
 }
