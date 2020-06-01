@@ -27,10 +27,10 @@
                 <e p="InteractionBehaviour.cs" t="Include" />
               </e>
               <e p="Interaction" t="Include">
-                <e p="InteractionBehaviour.cs" t="Include" />
-                <e p="InteractionClip.cs" t="Include" />
-                <e p="InteractionMixerBehaviour.cs" t="Include" />
-                <e p="InteractionTrack.cs" t="Include" />
+                <e p="LevelBehaviour.cs" t="Include" />
+                <e p="LevelClip.cs" t="Include" />
+                <e p="LevelMixerBehaviour.cs" t="Include" />
+                <e p="LevelTrack.cs" t="Include" />
               </e>
             </e>
             <e p="SimpleCameraController.cs" t="Include" />

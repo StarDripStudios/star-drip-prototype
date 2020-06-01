@@ -19,21 +19,7 @@ namespace StarDust
 			
 			Debug.Log("Showing indication");
 
-			switch (interactionType)
-			{
-				case InteractionType.Press:
-					indication.Indicate(Color.blue);
-					interaction.Indicate(Color.blue);
-					break;
-				case InteractionType.Hold:
-					indication.Indicate(Color.red);
-					interaction.Indicate(Color.red);
-					break;
-				case InteractionType.Compress:
-					indication.Indicate(Color.yellow);
-					interaction.Indicate(Color.yellow);
-					break;
-			}
+			indication.Indicate(interaction, interactionType);
 			
 			base.OnEnter(playable, i);
 		}
@@ -51,7 +37,6 @@ namespace StarDust
 			Debug.Log("Disabling indication");
 			
 			indication.ResetIndication();
-			interaction.ResetIndication();
 			base.OnExit(playable, i);
 		}
 	}

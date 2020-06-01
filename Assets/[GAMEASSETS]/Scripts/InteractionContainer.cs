@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace StarDust
@@ -15,6 +13,8 @@ namespace StarDust
 		public PressInteraction pressInteraction;
 		public HoldInteraction holdInteraction;
 		public CompressInteraction compressionInteraction;
+
+		private Action<InteractionContainer> _onPressedCallback;
 
 		public void Indicate(Color color)
 		{
@@ -32,8 +32,10 @@ namespace StarDust
 			interactionRenderer.material.SetColor(interactionColorProperty, defaultInteractionColor);
 		}
 		
-		public void StartInteraction(InteractionType type, Action onPressedCallback)
+		public void StartInteraction(InteractionType type, Action<InteractionContainer> onPressedCallback)
 		{
+			_onPressedCallback = onPressedCallback;
+			
 			if (interactionRenderer) interactionRenderer.enabled = false;
 			
 			if (pressInteraction) pressInteraction.gameObject.SetActive(false);
@@ -52,6 +54,11 @@ namespace StarDust
 					if (compressionInteraction) compressionInteraction.gameObject.SetActive(true);
 					break;
 			}
+		}
+
+		public void InteractionPressed()
+		{
+			_onPressedCallback?.Invoke(this);
 		}
 	}
 }
