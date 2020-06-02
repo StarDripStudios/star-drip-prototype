@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 6265352520427935892}
   collision: {fileID: 6265352520427935889}
-  validPressRange: 0.9
+  validPressRange: 0.8
   holdDuration: 3
   onButtonHeld:
     m_PersistentCalls:
