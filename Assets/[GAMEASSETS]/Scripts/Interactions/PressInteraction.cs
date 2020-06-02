@@ -13,7 +13,7 @@ namespace StarDust
         public UnityEvent onButtonPressed;
 
         private float _previousHandHeight;
-        private float _min, _max;
+        public float _min, _max;
         private bool _wasPressed;
 
         private void Start()

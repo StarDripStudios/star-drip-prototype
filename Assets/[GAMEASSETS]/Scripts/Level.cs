@@ -1,19 +1,30 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.UI;
 
 namespace StarDust
 {
 	public class Level : MonoBehaviour
 	{
+		public PlayableDirector director;
+		public GameObject startPointsContainer;
+		public GameObject interactionContainer;
 		public Image indicationImage;
 		public Color defaultColor;
 		public float timeRemaining;
-
+		
 		private Dictionary<InteractionContainer, InteractionType> _sequenceLookup;
-
+		private Dictionary<InteractionContainer, InteractionType> _enteredInteractions = new Dictionary<InteractionContainer, InteractionType>();
 		private InteractionContainer _currentInteraction;
 
+		public void StartLevel()
+		{
+			if (startPointsContainer) startPointsContainer.SetActive(false);
+			if (interactionContainer) interactionContainer.SetActive(true);
+			if (director) director.Play();			
+		}
+		
 		public void PrepareSequence()
 		{
 			_sequenceLookup?.Clear();
@@ -57,6 +68,8 @@ namespace StarDust
 
 		public void StartWaitingForInput()
 		{
+			_enteredInteractions?.Clear();
+
 			foreach (var sequence in _sequenceLookup)
 			{
 				var interaction = sequence.Key;
@@ -75,11 +88,11 @@ namespace StarDust
 			
 		}
 
-		private void ReportInteraction(InteractionContainer interaction)
+		private void ReportInteraction(InteractionContainer interaction, InteractionType type)
 		{
 			if (!interaction) return;
 			
-			
+			_enteredInteractions.Add(interaction, type);
 		}
 	}
 }
