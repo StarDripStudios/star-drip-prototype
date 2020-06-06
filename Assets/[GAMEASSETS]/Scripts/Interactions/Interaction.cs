@@ -21,6 +21,11 @@ namespace StarDust
         {
             
         }
+
+        public virtual void ResetInteraction()
+        {
+            
+        }
     }
 
     public enum InteractionType

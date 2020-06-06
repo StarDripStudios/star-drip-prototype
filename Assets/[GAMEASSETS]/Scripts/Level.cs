@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.UI;
@@ -8,12 +10,15 @@ namespace StarDust
 	public class Level : MonoBehaviour
 	{
 		public PlayableDirector director;
+		public PlayableAsset[] sequences;
 		public GameObject startPointsContainer;
 		public GameObject interactionContainer;
 		public Image indicationImage;
+		public TextMeshProUGUI statusIndicator;
 		public Color defaultColor;
 		public float timeRemaining;
-		
+
+		private int _sequenceIndex;
 		private Dictionary<InteractionContainer, InteractionType> _sequenceLookup;
 		private Dictionary<InteractionContainer, InteractionType> _enteredInteractions = new Dictionary<InteractionContainer, InteractionType>();
 		private InteractionContainer _currentInteraction;
@@ -22,15 +27,101 @@ namespace StarDust
 		{
 			if (startPointsContainer) startPointsContainer.SetActive(false);
 			if (interactionContainer) interactionContainer.SetActive(true);
-			if (director) director.Play();			
+			PlayNextSequence();
 		}
+		
+		private void PlayNextSequence()
+		{
+			if (!director) return;
+			
+			director.Stop();
+			
+			//Level is done
+			if (sequences.Length <= _sequenceIndex)
+			{
+				EvaluateLevel();
+				return;
+			}
+			
+			director.playableAsset = sequences[_sequenceIndex];
+			director.Play();
+			
+			_sequenceIndex++;
+		}
+
+		private void ReportInteraction(InteractionContainer interaction, InteractionType type)
+		{
+			if (!interaction) return;
+
+			//Id the count of entered interactions don't match the current interaction index, it's a miss
+			if (_enteredInteractions.Count != interaction.Index)
+			{
+				EvaluateSequence(false);
+				return;
+			}
+			
+			_enteredInteractions.Add(interaction, type);
+
+			//Compare keys and values of entered dict to sequence dict
+			var valueComparer = EqualityComparer<InteractionType>.Default;
+			foreach (var entered in _enteredInteractions)
+			{
+				//if can't get key from entered out of sequence, it's a miss
+				if (!_sequenceLookup.TryGetValue(entered.Key, out type))
+				{
+					EvaluateSequence(false);
+					break;
+				}
+
+				//if the values don't match, it's a miss
+				if (valueComparer.Equals(entered.Value, type)) continue;
+				EvaluateSequence(false);
+				return;
+			}
+			
+			//Sequence is a success, evaluate
+			if (_enteredInteractions.Count != _sequenceLookup.Count) return;
+			EvaluateSequence(true);
+		}
+
+		public void EvaluateSequence(bool isSuccess)
+		{
+			StartCoroutine(StatusRoutine(isSuccess ? "Sequence Success" : "Sequence Fail"));
+			PlayNextSequence();
+		}
+		
+		private void EvaluateLevel()
+		{
+			StartCoroutine(StatusRoutine("Complete"));
+		}
+
+		private IEnumerator StatusRoutine(string message)
+		{
+			if(!statusIndicator) yield break;
+
+			statusIndicator.text = message;
+			yield return new WaitForSeconds(1);
+			statusIndicator.text = string.Empty;
+		}
+		
+		#region Timeline Calls
 		
 		public void PrepareSequence()
 		{
-			_sequenceLookup?.Clear();
+			if (_sequenceLookup != null)
+			{
+				foreach (var interaction in _sequenceLookup)
+				{
+					if (!interaction.Key) continue;
+					interaction.Key.ResetInteraction();
+				}
+
+				_sequenceLookup.Clear();
+			}
+
 			_sequenceLookup = new Dictionary<InteractionContainer, InteractionType>();
 		}
-		
+
 		public void Indicate(InteractionContainer interaction, InteractionType type)
 		{
 			if (!indicationImage) return;
@@ -52,7 +143,7 @@ namespace StarDust
 			}
 			
 			indicationImage.color = indicationColor;
-			_currentInteraction.Indicate(indicationColor);
+			_currentInteraction.Indicate(_sequenceLookup.Count, indicationColor);
 			
 			_sequenceLookup.Add(_currentInteraction, type);
 		}
@@ -82,47 +173,8 @@ namespace StarDust
 		{
 			timeRemaining = time;
 		}
-
-		private void ReportInteraction(InteractionContainer interaction, InteractionType type)
-		{
-			if (!interaction) return;
-			
-			_enteredInteractions.Add(interaction, type);
-
-			var typeComparer = EqualityComparer<InteractionContainer>.Default;
-			var valueComparer = EqualityComparer<InteractionType>.Default;
-
-			//Compare keys and values of entered dict to sequence dict
-			foreach (var entered in _enteredInteractions)
-			{
-				//if can't get key from entered out of sequence, it's a miss
-				//if the values don't match, it's a miss
-				if (!_sequenceLookup.TryGetValue(entered.Key, out type))
-				{
-					Miss();
-					return;
-				}
-
-				if (valueComparer.Equals(entered.Value, type)) continue;
-				
-				Miss();
-				return;
-			}
-			
-			//if we make it here, it's not
-			
-			//Sequence is a success, evaluate
-			if (_enteredInteractions == _sequenceLookup) EvaluateSequence();
-		}
-
-		private void Miss()
-		{
-			
-		}
 		
-		public void EvaluateSequence()
-		{
-			
-		}
+		#endregion Timeline Calls
+
 	}
 }

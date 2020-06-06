@@ -46,7 +46,8 @@ namespace StarDust
 			
 			if (state != LevelState.Process) return;
 			
-			level.EvaluateSequence();
+			//If we reach here, it's a miss
+			level.EvaluateSequence(false);
 			
 			base.OnExit(playable, i);
 		}

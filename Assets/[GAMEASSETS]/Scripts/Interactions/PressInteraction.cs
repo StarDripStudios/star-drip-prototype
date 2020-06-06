@@ -31,9 +31,7 @@ namespace StarDust
 
         public override void OnInteractionExit(XRBaseInteractor interactor)
         {
-            _previousHandHeight = 0f;
-            SetYPosition(_max);
-            _wasPressed = false;
+            ResetInteraction();
             base.OnInteractionExit(interactor);
         }
 
@@ -82,6 +80,14 @@ namespace StarDust
             var yValue = target.localPosition.y;
             var range = Mathf.Clamp(yValue, _min, _min + 0.01f);
             return yValue == range;
+        }
+
+        public override void ResetInteraction()
+        {
+            _previousHandHeight = 0f;
+            SetYPosition(_max);
+            _wasPressed = false;
+            base.ResetInteraction();
         }
     }
 }
