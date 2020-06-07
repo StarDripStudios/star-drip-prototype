@@ -6,11 +6,12 @@ namespace StarDust
 {
     public class PressInteraction : Interaction
     {
+        public UnityEvent onButtonPressed;
+
         public Transform target;
         public Collider collision;
         [Range(0.1f, 1)]
         public float validPressRange = 0.5f;
-        public UnityEvent onButtonPressed;
 
         private float _previousHandHeight;
         public float _min, _max;
@@ -31,9 +32,7 @@ namespace StarDust
 
         public override void OnInteractionExit(XRBaseInteractor interactor)
         {
-            _previousHandHeight = 0f;
-            SetYPosition(_max);
-            _wasPressed = false;
+            ResetInteraction();
             base.OnInteractionExit(interactor);
         }
 
@@ -82,6 +81,14 @@ namespace StarDust
             var yValue = target.localPosition.y;
             var range = Mathf.Clamp(yValue, _min, _min + 0.01f);
             return yValue == range;
+        }
+
+        public override void ResetInteraction()
+        {
+            _previousHandHeight = 0f;
+            SetYPosition(_max);
+            _wasPressed = false;
+            base.ResetInteraction();
         }
     }
 }
