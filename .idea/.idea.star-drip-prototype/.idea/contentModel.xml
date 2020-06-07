@@ -856,6 +856,89 @@
             </e>
           </e>
         </e>
+        <e p="Kandooz" t="Include">
+          <e p="Common" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Attributes" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="ReadOnlyDrawer.cs" t="Include" />
+                </e>
+                <e p="ReadOnly.cs" t="Include" />
+              </e>
+              <e p="MonoBehaviours" t="Include">
+                <e p="CrossFadingFloatLerper.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="RigVisualizerEditor.cs" t="Include" />
+                </e>
+                <e p="RigVisualizer.cs" t="Include" />
+              </e>
+              <e p="ScriptableObjects" t="Include">
+                <e p="GameEvent.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Shader" t="Include">
+              <e p="Highlight.shader" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="Gradient Sky.shader" t="Include" />
+              <e p="Lines.shader" t="Include" />
+            </e>
+          </e>
+          <e p="KVR" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Attributes" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="MinMaxDrawer.cs" t="Include" />
+                </e>
+                <e p="MinMaxAttribute.cs" t="Include" />
+              </e>
+              <e p="Classes" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="HandConstraintEditor.cs" t="Include" />
+                </e>
+                <e p="Finger.cs" t="Include" />
+                <e p="HandConstraints.cs" t="Include" />
+              </e>
+              <e p="CustomEvents" t="Include">
+                <e p="HandEvent.cs" t="Include" />
+              </e>
+              <e p="MonoBehaviours" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="Grabable.cs" t="Include" />
+                  <e p="HandAnimationControllerEditor.cs" t="Include" />
+                  <e p="HandStatPropertyDrawer.cs" t="Include" />
+                  <e p="InteractableEditor.cs" t="Include" />
+                </e>
+                <e p="Grabable.cs" t="Include" />
+                <e p="Hand.cs" t="Include" />
+                <e p="HandAnimationController.cs" t="Include" />
+                <e p="HandController.cs" t="Include" />
+                <e p="HandInputManager.cs" t="Include" />
+                <e p="HandTracker.cs" t="Include" />
+                <e p="HoverHighlighter.cs" t="Include" />
+                <e p="Interactable.cs" t="Include" />
+                <e p="Throwable.cs" t="Include" />
+              </e>
+              <e p="ScriptableObjects" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="HandDataEditor.cs" t="Include" />
+                  <e p="InputManagerImporter.cs" t="Include" />
+                  <e p="VRInputManagerEditor.cs" t="Include" />
+                </e>
+                <e p="HandData.cs" t="Include" />
+                <e p="VRInputManager.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="CircleHighlight.shader" t="Include" />
+            </e>
+            <e p="TestScene" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="PlayerPositionUpdater.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Oculus" t="Include">
           <e p="AudioManager" t="Include">
             <e p="Scenes" t="Include">

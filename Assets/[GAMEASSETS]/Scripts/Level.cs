@@ -19,6 +19,7 @@ namespace StarDust
 		public float timeRemaining;
 
 		private int _sequenceIndex;
+		private int _successCount;
 		private Dictionary<InteractionContainer, InteractionType> _sequenceLookup;
 		private Dictionary<InteractionContainer, InteractionType> _enteredInteractions = new Dictionary<InteractionContainer, InteractionType>();
 		private InteractionContainer _currentInteraction;
@@ -81,26 +82,27 @@ namespace StarDust
 			
 			//Sequence is a success, evaluate
 			if (_enteredInteractions.Count != _sequenceLookup.Count) return;
+			_successCount++;
 			EvaluateSequence(true);
 		}
 
 		public void EvaluateSequence(bool isSuccess)
 		{
-			StartCoroutine(StatusRoutine(isSuccess ? "Sequence Success" : "Sequence Fail"));
+			StartCoroutine(StatusRoutine(isSuccess ? "Sequence Success" : "Sequence Fail", 1.5f));
 			PlayNextSequence();
 		}
 		
 		private void EvaluateLevel()
 		{
-			StartCoroutine(StatusRoutine("Complete"));
+			StartCoroutine(StatusRoutine($"Complete {_successCount}/{sequences.Length}", 10));
 		}
 
-		private IEnumerator StatusRoutine(string message)
+		private IEnumerator StatusRoutine(string message, float showDuration)
 		{
 			if(!statusIndicator) yield break;
 
 			statusIndicator.text = message;
-			yield return new WaitForSeconds(1);
+			yield return new WaitForSeconds(showDuration);
 			statusIndicator.text = string.Empty;
 		}
 		

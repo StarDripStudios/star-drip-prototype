@@ -6,11 +6,12 @@ namespace StarDust
 {
     public class PressInteraction : Interaction
     {
+        public UnityEvent onButtonPressed;
+
         public Transform target;
         public Collider collision;
         [Range(0.1f, 1)]
         public float validPressRange = 0.5f;
-        public UnityEvent onButtonPressed;
 
         private float _previousHandHeight;
         public float _min, _max;
