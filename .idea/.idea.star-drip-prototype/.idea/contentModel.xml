@@ -19,6 +19,7 @@
               <e p="PressInteraction.cs" t="Include" />
             </e>
             <e p="Level.cs" t="Include" />
+            <e p="LevelHeadFollower.cs" t="Include" />
             <e p="Playables" t="Include">
               <e p="Indication" t="Include">
                 <e p="IndicationClip.cs" t="Include" />
