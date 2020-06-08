@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 3632822614876813249}
   - component: {fileID: 3632822614876813253}
   - component: {fileID: 3632822614876813252}
+  - component: {fileID: 8889152124467306123}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -141,6 +142,19 @@ MonoBehaviour:
   m_PlayHapticsOnHoverExit: 0
   m_HapticHoverExitIntensity: 0
   m_HapticHoverExitDuration: 0
+--- !u!65 &8889152124467306123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3632822614876813248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.1, z: 0.1}
+  m_Center: {x: -0.03, y: -0.03, z: -0.03}
 --- !u!1 &3632822615433983060
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,6 +166,7 @@ GameObject:
   - component: {fileID: 3632822615433983061}
   - component: {fileID: 3632822615433983017}
   - component: {fileID: 3632822615433983016}
+  - component: {fileID: 6722150152465405163}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -251,6 +266,19 @@ MonoBehaviour:
   m_PlayHapticsOnHoverExit: 0
   m_HapticHoverExitIntensity: 0
   m_HapticHoverExitDuration: 0
+--- !u!65 &6722150152465405163
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3632822615433983060}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.1, z: 0.1}
+  m_Center: {x: 0.03, y: -0.03, z: -0.03}
 --- !u!1 &3632822615490667709
 GameObject:
   m_ObjectHideFlags: 0
