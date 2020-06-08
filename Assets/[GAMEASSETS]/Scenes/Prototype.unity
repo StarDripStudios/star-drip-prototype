@@ -1098,21 +1098,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PFB_Rig
       objectReference: {fileID: 0}
-    - target: {fileID: 3632822616071171097, guid: af3a0449d5aeb7a46afa44fe2fd6b4c8,
-        type: 3}
-      propertyPath: m_CameraFloorOffsetObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3632822616071171097, guid: af3a0449d5aeb7a46afa44fe2fd6b4c8,
-        type: 3}
-      propertyPath: m_CameraGameObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3632822616071171097, guid: af3a0449d5aeb7a46afa44fe2fd6b4c8,
-        type: 3}
-      propertyPath: m_TrackingOriginMode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3632822616071171102, guid: af3a0449d5aeb7a46afa44fe2fd6b4c8,
         type: 3}
       propertyPath: m_LocalPosition.x
