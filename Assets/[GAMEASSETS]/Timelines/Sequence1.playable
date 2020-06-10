@@ -28,23 +28,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     state: 0
---- !u!114 &-5770108426607089667
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a88caf583b37994598e705df4edb2f0, type: 3}
-  m_Name: IndicationClip(Clone)(Clone)(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  template:
-    interactionType: 2
-  interaction:
-    exposedName: 9117e176d48d4a14bae43d21b9b85066
-    defaultValue: {fileID: 0}
 --- !u!114 &-3662809279382285737
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,10 +119,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: LevelClip
   - m_Version: 1
-    m_Start: 9.5
+    m_Start: 8
     m_ClipIn: 0
     m_Asset: {fileID: -6929913741980579134}
-    m_Duration: 10
+    m_Duration: 60
     m_TimeScale: 1
     m_ParentTrack: {fileID: -3662809279382285737}
     m_EaseInDuration: 0
@@ -217,7 +200,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
-  m_Name: TestSequence
+  m_Name: Sequence1
   m_EditorClassIdentifier: 
   m_Version: 0
   m_Tracks:
@@ -542,75 +525,6 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: IndicationClip
-  - m_Version: 1
-    m_Start: 8
-    m_ClipIn: 0
-    m_Asset: {fileID: -5770108426607089667}
-    m_Duration: 1.5
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: 4557008394813469526}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: 0
-    m_BlendOutDuration: 0
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: IndicationClip
   m_Markers:
     m_Objects: []
   AttackObject: {fileID: 0}
@@ -644,7 +558,7 @@ MonoBehaviour:
   m_Name: IndicationClip(Clone)(Clone)
   m_EditorClassIdentifier: 
   template:
-    interactionType: 1
+    interactionType: 0
   interaction:
     exposedName: e1bc19671fa49a1449f4b2fb95586b50
     defaultValue: {fileID: 0}
