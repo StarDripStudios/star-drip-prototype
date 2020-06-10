@@ -4,7 +4,8 @@ public class ColorValidation : MonoBehaviour
 {
     public Renderer renderer;
     public Color validColor;
-
+    public string property;
+    
     private Color originalColor;
 
     private void Start()
@@ -12,7 +13,7 @@ public class ColorValidation : MonoBehaviour
         if (!renderer ||
             !renderer.material) return;
 
-        originalColor = renderer.material.GetColor("_BaseColor");
+        originalColor = renderer.material.GetColor(property);
     }
 
     public void ValidateColor()
@@ -20,7 +21,7 @@ public class ColorValidation : MonoBehaviour
         if (!renderer ||
             !renderer.material) return;
         
-        renderer.material.SetColor("_BaseColor", validColor);
+        renderer.material.SetColor(property, validColor);
     }
 
     public void ResetColor()
@@ -28,6 +29,6 @@ public class ColorValidation : MonoBehaviour
         if (!renderer ||
             !renderer.material) return;
         
-        renderer.material.SetColor("_BaseColor", originalColor);
+        renderer.material.SetColor(property, originalColor);
     }
 }
