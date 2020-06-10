@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\marcr\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -840,6 +840,26 @@
             <e p="VideoSchedulerPlayableBehaviour.cs" t="Include" />
             <e p="VideoScriptPlayableAsset.cs" t="Include" />
             <e p="VideoScriptPlayableTrack.cs" t="Include" />
+          </e>
+        </e>
+        <e p="FORGE3D" t="Include">
+          <e p="Planets" t="Include">
+            <e p="Planets 1.4.1 - Read Me.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="Atmosphere.shader" t="Include" />
+              <e p="Moon.shader" t="Include" />
+              <e p="Planet_Gas.shader" t="Include" />
+              <e p="Planet_Ice.shader" t="Include" />
+              <e p="Planet_Lava.shader" t="Include" />
+              <e p="Planet_Oceanic.shader" t="Include" />
+              <e p="Planet_Ring_Opaque.shader" t="Include" />
+              <e p="Planet_Ring_Transparent.shader" t="Include" />
+              <e p="Planet_Sand.shader" t="Include" />
+              <e p="Planet_Terrestrial.shader" t="Include" />
+              <e p="Planet_Thunderstorm.shader" t="Include" />
+              <e p="Sun.shader" t="Include" />
+              <e p="SunCorona.shader" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Framework" t="Include">
