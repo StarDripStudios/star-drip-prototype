@@ -149,7 +149,7 @@ Material:
     - _LavaAttenuation: 0.04
     - _LavaBoost: 4.5
     - _LavaDetail: 0.593
-    - _LavaFactorsX: 0.728
+    - _LavaFactorsX: 0.96
     - _LavaFactorsY: 0.91
     - _LavaFactorsZ: 0.79
     - _LavaMaskBoost: 0.21
@@ -157,13 +157,13 @@ Material:
     - _LavaMaskFactorsY: 4.12
     - _LavaMaskPower: 7.4
     - _LavaMaskTiling: 2.69
-    - _LavaPasstrough: 0.05
+    - _LavaPasstrough: 0.1
     - _MagmaBoost: 888
     - _MagmaFactorsW: 228
     - _MagmaFactorsZ: 1
     - _MagmaGlow: 1111
     - _MagmaPower: 1.5
-    - _MagmaTiling: 1.05
+    - _MagmaTiling: 0.69
     - _Metallic: 0
     - _Mode: 0
     - _NormalFalloff: 3
