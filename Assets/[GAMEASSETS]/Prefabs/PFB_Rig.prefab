@@ -447,9 +447,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3632822616071171102}
   - component: {fileID: 3632822616071171097}
-  - component: {fileID: 3632822616071171101}
-  - component: {fileID: 3632822616071171100}
-  - component: {fileID: 3632822616071171103}
   m_Layer: 0
   m_Name: PFB_Rig
   m_TagString: Untagged
@@ -490,53 +487,6 @@ MonoBehaviour:
   m_TrackingOriginMode: 2
   m_TrackingSpace: 3
   m_CameraYOffset: 1.36144
---- !u!114 &3632822616071171101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3632822616071171096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 3632822616071171100}
---- !u!114 &3632822616071171100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3632822616071171096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Timeout: 10
-  m_XRRig: {fileID: 3632822616071171097}
---- !u!114 &3632822616071171103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3632822616071171096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc4f2c0214c9b494fa7eb5b8b2c02885, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 3632822616071171100}
-  m_TurnUsage: 0
-  m_Controllers:
-  - {fileID: 3632822614876813253}
-  - {fileID: 3632822615433983017}
-  m_TurnAmount: 45
-  m_DebounceTime: 0.5
-  m_DeadZone: 0.75
 --- !u!1 &6873020366923407336
 GameObject:
   m_ObjectHideFlags: 0
