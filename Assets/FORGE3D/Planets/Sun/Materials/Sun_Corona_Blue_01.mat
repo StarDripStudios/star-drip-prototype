@@ -158,7 +158,7 @@ Material:
     - _VertexSpeed: 22
     - _VertexTile: 15
     - _ZWrite: 1
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Cool: {r: 0.4339999, g: 0.1279999, b: 0, a: 0.597}
