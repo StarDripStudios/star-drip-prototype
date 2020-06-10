@@ -125,7 +125,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _FrenselLandMult: 1.57
-    - _FresnelLandPower: 0.8
+    - _FresnelLandPower: 21.4
     - _FresnelNormalScale: 0
     - _FresnelWaterMult: 10
     - _FresnelWaterPower: 1.8
@@ -161,7 +161,7 @@ Material:
     - _WaterSmoothness: 0.71
     - _WaterSpecular: 1
     - _ZWrite: 1
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 0}
     - _CityLightColor: {r: 0.9411765, g: 0.84190416, b: 0.66435987, a: 0}
