@@ -14,15 +14,18 @@ namespace StarDust
 		public HoldInteraction holdInteraction;
 		public CompressInteraction compressionInteraction;
 
+		public int Index { get; private set; }
+		
 		private InteractionType _type;
 		private Action<InteractionContainer, InteractionType> _onPressedCallback;
-		private GameObject activeInteraction;
+		private Interaction activeInteraction;
 
-		public void Indicate(Color color)
+		public void Indicate(int index, Color color)
 		{
 			if (!interactionRenderer ||
 			    !interactionRenderer.material) return;
-			
+
+			Index = index;
 			interactionRenderer.material.SetColor(interactionColorProperty, color);
 		}
 
@@ -48,25 +51,33 @@ namespace StarDust
 			switch (_type)
 			{
 				case InteractionType.Press:
-					activeInteraction = pressInteraction.gameObject;
+					activeInteraction = pressInteraction;
 					break;
 				case InteractionType.Hold:
-					activeInteraction = holdInteraction.gameObject;
+					activeInteraction = holdInteraction;
 					break;
 				case InteractionType.Compress:
-					activeInteraction = compressionInteraction.gameObject;
+					activeInteraction = compressionInteraction;
 					break;
 			}
 			
-			if (activeInteraction) activeInteraction.SetActive(true);
+			if (activeInteraction) activeInteraction.gameObject.SetActive(true);
 		}
 
 		public void InteractionPressed()
 		{
-			if (interactionRenderer) interactionRenderer.enabled = true;
-			if (activeInteraction) activeInteraction.SetActive(false);
-			activeInteraction = null;
+			ResetInteraction();
 			_onPressedCallback?.Invoke(this, _type);
+		}
+
+		public void ResetInteraction()
+		{
+			if (interactionRenderer) interactionRenderer.enabled = true;
+			if (!activeInteraction) return;
+		
+			activeInteraction.ResetInteraction();
+			activeInteraction.gameObject.SetActive(false);
+			activeInteraction = null;
 		}
 	}
 }

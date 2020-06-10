@@ -33,10 +33,7 @@ namespace StarDust
 
         public override void OnInteractionExit(XRBaseInteractor interactor)
         {
-            _previousHandHeight = 0f;
-            SetYPosition(_max);
-            _wasHeld = false;
-            _timePassed = 0;
+            ResetInteraction();
             base.OnInteractionExit(interactor);
         }
 
@@ -92,6 +89,15 @@ namespace StarDust
         {
             _timePassed += Time.deltaTime;
             return _timePassed >= holdDuration;
+        }
+
+        public override void ResetInteraction()
+        {
+            _previousHandHeight = 0f;
+            SetYPosition(_max);
+            _wasHeld = false;
+            _timePassed = 0;
+            base.ResetInteraction();
         }
     }
 }
