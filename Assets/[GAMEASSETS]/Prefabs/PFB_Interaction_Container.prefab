@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc7b7906764e1e4fa17c2c8bcf0123b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultInteractionColor: {r: 1, g: 1, b: 1, a: 1}
+  defaultInteractionColor: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
   interactionRenderer: {fileID: 6265352520427935888}
   interactionColorProperty: _Color
   pressInteraction: {fileID: 1605853435217371582}
