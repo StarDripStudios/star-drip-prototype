@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultInteractionColor: {r: 1, g: 1, b: 1, a: 1}
   interactionRenderer: {fileID: 6265352520427935888}
-  interactionColorProperty: _BaseColor
+  interactionColorProperty: _Color
   pressInteraction: {fileID: 1605853435217371582}
   holdInteraction: {fileID: 1424575627382538544}
   compressionInteraction: {fileID: 7352325989125578696}
@@ -146,9 +146,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 978289509369517938, guid: 73cdf36c288ea6240a01606c7594b263,
         type: 3}
+      propertyPath: onButtonPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 978289509369517938, guid: 73cdf36c288ea6240a01606c7594b263,
+        type: 3}
       propertyPath: onButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1835927112195900817}
+    - target: {fileID: 978289509369517938, guid: 73cdf36c288ea6240a01606c7594b263,
+        type: 3}
+      propertyPath: onButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 978289509369517938, guid: 73cdf36c288ea6240a01606c7594b263,
+        type: 3}
+      propertyPath: onButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 978289509369517938, guid: 73cdf36c288ea6240a01606c7594b263,
+        type: 3}
+      propertyPath: onButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: InteractionPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 978289509369517938, guid: 73cdf36c288ea6240a01606c7594b263,
+        type: 3}
+      propertyPath: onButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 978289509369517939, guid: 73cdf36c288ea6240a01606c7594b263,
         type: 3}
       propertyPath: m_Name
@@ -273,9 +298,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3596980826040128745, guid: df905c5a76c7e9245b3405b772a95fd0,
         type: 3}
+      propertyPath: onButtonHeld.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596980826040128745, guid: df905c5a76c7e9245b3405b772a95fd0,
+        type: 3}
       propertyPath: onButtonHeld.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1835927112195900817}
+    - target: {fileID: 3596980826040128745, guid: df905c5a76c7e9245b3405b772a95fd0,
+        type: 3}
+      propertyPath: onButtonHeld.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596980826040128745, guid: df905c5a76c7e9245b3405b772a95fd0,
+        type: 3}
+      propertyPath: onButtonHeld.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596980826040128745, guid: df905c5a76c7e9245b3405b772a95fd0,
+        type: 3}
+      propertyPath: onButtonHeld.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: InteractionPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596980826040128745, guid: df905c5a76c7e9245b3405b772a95fd0,
+        type: 3}
+      propertyPath: onButtonHeld.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6523163334077254817, guid: df905c5a76c7e9245b3405b772a95fd0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -390,9 +440,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1837304054699598265, guid: 7552729a6833f1949ad9a807b330bb1d,
         type: 3}
+      propertyPath: onButtonPressed.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837304054699598265, guid: 7552729a6833f1949ad9a807b330bb1d,
+        type: 3}
       propertyPath: onButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1835927112195900817}
+    - target: {fileID: 1837304054699598265, guid: 7552729a6833f1949ad9a807b330bb1d,
+        type: 3}
+      propertyPath: onButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837304054699598265, guid: 7552729a6833f1949ad9a807b330bb1d,
+        type: 3}
+      propertyPath: onButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837304054699598265, guid: 7552729a6833f1949ad9a807b330bb1d,
+        type: 3}
+      propertyPath: onButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: InteractionPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1837304054699598265, guid: 7552729a6833f1949ad9a807b330bb1d,
+        type: 3}
+      propertyPath: onButtonPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6523163334077254817, guid: 7552729a6833f1949ad9a807b330bb1d,
         type: 3}
       propertyPath: m_LocalPosition.x

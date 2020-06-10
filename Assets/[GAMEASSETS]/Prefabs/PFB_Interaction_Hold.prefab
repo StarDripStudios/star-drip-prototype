@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: c018cd740e97f3047b71abaecd7d5879, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -160,17 +160,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: InteractionPressed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &-4604364103820122206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderer: {fileID: 6265352520427935888}
   validColor: {r: 0, g: 0.6509434, b: 0.035845075, a: 1}
+  property: _Color
 --- !u!1 &6265352520427935893
 GameObject:
   m_ObjectHideFlags: 0
