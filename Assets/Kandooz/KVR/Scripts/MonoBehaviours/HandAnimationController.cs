@@ -1,6 +1,5 @@
 ﻿using Kandooz.Common;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.Playables;
@@ -182,11 +181,13 @@ namespace Kandooz.KVR
         }
         public void Update()
         {
-            if (!EditorApplication.isPlaying)
+            #if UNITY_EDITOR
+            if (!UnityEditor.EditorApplication.isPlaying)
             {
                 //graph.SetTimeUpdateMode(UnityEngine.Playables.DirectorUpdateMode.Manual);
                 graph.Evaluate();
             }
+            #endif
             graph.Evaluate();
 
             for (int i = 0; i < poses.Count; i++)

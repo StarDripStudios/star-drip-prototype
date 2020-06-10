@@ -77,7 +77,7 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _GlowFactor: 0.52
-    - _GlowIntensity: 2.77
+    - _GlowIntensity: 0.3
     - _GlowOffset: -5.2
     - _InRingFactor: 5.27
     - _Intensity: 1

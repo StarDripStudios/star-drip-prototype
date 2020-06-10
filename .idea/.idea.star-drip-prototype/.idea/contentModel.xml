@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\marcr\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -842,6 +842,26 @@
             <e p="VideoScriptPlayableTrack.cs" t="Include" />
           </e>
         </e>
+        <e p="FORGE3D" t="Include">
+          <e p="Planets" t="Include">
+            <e p="Planets 1.4.1 - Read Me.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="Atmosphere.shader" t="Include" />
+              <e p="Moon.shader" t="Include" />
+              <e p="Planet_Gas.shader" t="Include" />
+              <e p="Planet_Ice.shader" t="Include" />
+              <e p="Planet_Lava.shader" t="Include" />
+              <e p="Planet_Oceanic.shader" t="Include" />
+              <e p="Planet_Ring_Opaque.shader" t="Include" />
+              <e p="Planet_Ring_Transparent.shader" t="Include" />
+              <e p="Planet_Sand.shader" t="Include" />
+              <e p="Planet_Terrestrial.shader" t="Include" />
+              <e p="Planet_Thunderstorm.shader" t="Include" />
+              <e p="Sun.shader" t="Include" />
+              <e p="SunCorona.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Framework" t="Include">
           <e p="Scripts" t="Include">
             <e p="Playables" t="Include">
@@ -854,6 +874,27 @@
             </e>
             <e p="TemplateSystem" t="Include">
               <e p="TemplateSystem.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Hovl Studio" t="Include">
+          <e p="Fantastic cartoon VFX" t="Include">
+            <e p="Demo scenes" t="Include">
+              <e p="CameraHolder.cs" t="Include" />
+              <e p="README.txt" t="Include" />
+            </e>
+            <e p="Prefabs" t="Include">
+              <e p="README.txt" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Rotator.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="Add_CenterGlow.shader" t="Include" />
+              <e p="Blend_CenterGlow.shader" t="Include" />
+              <e p="Blood.shader" t="Include" />
+              <e p="SlashOld.shader" t="Include" />
+              <e p="Tornado.shader" t="Include" />
             </e>
           </e>
         </e>
@@ -1679,6 +1720,13 @@
               <e p="SimpleJSON.cs" t="Include" />
               <e p="SimpleJSONUnity.cs" t="Include" />
             </e>
+          </e>
+        </e>
+        <e p="Skyboxes" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Skybox 6 Sided 3 Axis Rotation.shader" t="Include" />
+            <e p="Skybox 6 Sided Rotation Matrix.shader" t="Include" />
+            <e p="Skybox Cubemap 2 Axis Rotation.shader" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
