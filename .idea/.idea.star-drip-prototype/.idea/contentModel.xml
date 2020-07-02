@@ -864,6 +864,58 @@
         </e>
         <e p="Framework" t="Include">
           <e p="Scripts" t="Include">
+            <e p="Button" t="Include">
+              <e p="Button.cs" t="Include" />
+            </e>
+            <e p="Examples" t="Include">
+              <e p="Keyboard" t="Include">
+                <e p="Keyboard.cs" t="Include" />
+                <e p="KeyboardButton.cs" t="Include" />
+                <e p="KeyboardButtonSimple.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Hands" t="Include">
+              <e p="Constraints" t="Include">
+                <e p="Constraints.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="ConstraintEditor.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Data" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="HandDataEditor.cs" t="Include" />
+                </e>
+                <e p="HandData.cs" t="Include" />
+              </e>
+              <e p="Finger" t="Include">
+                <e p="Finger.cs" t="Include" />
+              </e>
+              <e p="Hand.cs" t="Include" />
+              <e p="HandAnimationController" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="HandAnimationControllerEditor.cs" t="Include" />
+                </e>
+                <e p="HandAnimationController.cs" t="Include" />
+              </e>
+              <e p="HandInput.cs" t="Include" />
+              <e p="Utility" t="Include">
+                <e p="CrossFadingFloatLerper.cs" t="Include" />
+                <e p="Handedness.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Input" t="Include">
+              <e p="Editor" t="Include">
+                <e p="VRInputManagerEditor.cs" t="Include" />
+              </e>
+              <e p="VRInputManager.cs" t="Include" />
+            </e>
+            <e p="Interfaces" t="Include">
+              <e p="IInitialization.cs" t="Include" />
+            </e>
+            <e p="Locomotion" t="Include">
+              <e p="MovementProvider.cs" t="Include" />
+              <e p="SmoothTurnProvider.cs" t="Include" />
+            </e>
             <e p="Playables" t="Include">
               <e p="Base" t="Include">
                 <e p="PlayableBehaviourBase.cs" t="Include" />
@@ -872,6 +924,10 @@
                 <e p="PlayableTrackBase.cs" t="Include" />
               </e>
             </e>
+            <e p="PlayerBody" t="Include">
+              <e p="BodyResizer.cs" t="Include" />
+            </e>
+            <e p="Singleton.cs" t="Include" />
             <e p="TemplateSystem" t="Include">
               <e p="TemplateSystem.cs" t="Include" />
             </e>
