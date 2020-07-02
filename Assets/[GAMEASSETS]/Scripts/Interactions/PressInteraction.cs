@@ -13,7 +13,7 @@ namespace StarDust
         [Range(0.1f, 1)]
         public float validPressRange = 0.5f;
 
-        private float _previousHandHeight;
+        public float _previousHandHeight;
         public float _min, _max;
         private bool _wasPressed;
 
