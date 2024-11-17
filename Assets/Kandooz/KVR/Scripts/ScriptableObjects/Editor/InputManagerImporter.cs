@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using Kandooz.KVR;
-using UnityEditor.Experimental.AssetImporters;
+
 using Kandooz.KVR.Editors;
 
-[ScriptedImporter(1,"KinterActionHandData")]
-public class InputManagerImporter : ScriptedImporter
+[UnityEditor.AssetImporters.ScriptedImporter(1,"KinterActionHandData")]
+public class InputManagerImporter : UnityEditor.AssetImporters.ScriptedImporter
 {
-    public override void OnImportAsset(AssetImportContext ctx)
+    public override void OnImportAsset(UnityEditor.AssetImporters.AssetImportContext ctx)
     {
         var managerIDs=AssetDatabase.FindAssets("t:VRInputManager");
 

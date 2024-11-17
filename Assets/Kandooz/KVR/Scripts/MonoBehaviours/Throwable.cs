@@ -85,8 +85,8 @@ namespace Kandooz.KVR
             rigidBody.isKinematic = false;
             rigidBody.constraints = RigidbodyConstraints.None;
             grabbed = false;
-            rigidBody.velocity = Velocity;
-            rigidBody.position += rigidBody.velocity * Time.deltaTime;
+            rigidBody.linearVelocity = Velocity;
+            rigidBody.position += rigidBody.linearVelocity * Time.deltaTime;
             rigidBody.angularVelocity = AngularVelocity;
             StopCoroutine(updateVelocitiesCorutine);
             this.enabled = true;
